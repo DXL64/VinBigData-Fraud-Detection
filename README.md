@@ -7,21 +7,27 @@
 ---
 ### Setup
 
+- First, you need install python enviroment
 - Install Python (over 3.6): https://www.python.org/downloads/
-- Install necessary libraries to rerun the notebooks:
-  - `pip install pandas`
-  - `pip install matplotlib`
-  - `pip install seaborn`
-  - `pip install notebook`
-  - `pip install sklearn`
-  - `pip install imbalanced-learn`
-  - `pip install xgboost`
-  - `pip install catboost`
-  - `pip install lightgbm`
-  
-  After that, if some base components are not installed yet, `numpy` and `scipy` should then be installed by:
-  - `pip install numpy`
-  - `pip install scipy`
+- Or install Conda
+##### You can use these scripts to install anaconda
+```
+sudo apt update
+apt-get install wget
+wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+bash Anaconda3-2020.07-Linux-x86_64.sh
+export PATH=~/anaconda3/bin:$PATH
+```
+##### Create a conda environment with python > 3.6
+```
+conda create -n py38 python=3.8 -y
+source ~/anaconda3/etc/profile.d/conda.sh
+```
+
+##### After that, install the required packages
+```
+pip install -r requirements.txt
+```
   
 ---
 ### Compile & Run
