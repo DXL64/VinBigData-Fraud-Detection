@@ -11,4 +11,3 @@ scipy==1.11.2
 seaborn==0.12.2
 xgboost==1.7.6
 lightgbm==4.0.0
-
